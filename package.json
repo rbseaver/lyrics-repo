@@ -1,8 +1,8 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "lyrics-repo",
   "private": true,
-  "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "version": "0.0.1",
+  "description": "Lyrics Repository",
   "license": "MIT",
   "scripts": {
     "build": "nest build",
