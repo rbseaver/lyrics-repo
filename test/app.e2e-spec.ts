@@ -26,10 +26,12 @@ describe('AppController (e2e)', () => {
       .expect('Hello World!');
   });
 
-  test('it should retrieve version from endpoint', () => {
-    return request(app.getHttpServer())
-      .get('/version')
-      .expect(200)
-      .expect('1.0.0');
+  describe('when calling version controller', () => {
+    test('it should retrieve version from endpoint', () => {
+      return request(app.getHttpServer())
+        .get('/version')
+        .expect(200)
+        .expect('1.0.0');
+    });
   });
 });
