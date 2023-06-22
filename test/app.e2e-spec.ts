@@ -19,10 +19,17 @@ describe('AppController (e2e)', () => {
     await app.close();
   });
 
-  it('/ (GET)', () => {
+  test('it should retrieve, "Hello, World!" from root endpoint', () => {
     return request(app.getHttpServer())
       .get('/')
       .expect(200)
       .expect('Hello World!');
+  });
+
+  test('it should retrieve version from endpoint', () => {
+    return request(app.getHttpServer())
+      .get('/version')
+      .expect(200)
+      .expect('1.0.0');
   });
 });
