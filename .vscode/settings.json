@@ -1,0 +1,3 @@
+{
+	"jest.autoRevealOutput": "on-exec-error"
+}
