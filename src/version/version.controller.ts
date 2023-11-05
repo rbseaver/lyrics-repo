@@ -1,9 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
+import { VersionService } from './version.service';
 
 @Controller('version')
 export class VersionController {
+  constructor(private readonly versionService: VersionService) {
+    
+  }
+
   @Get()
-  getVersion(): string | Promise<string> {
-    return '1.0.0';
+  async getVersion(): Promise<string> {
+    return await this.versionService.getVersion();
   }
 }

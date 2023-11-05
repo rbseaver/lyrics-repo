@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { VersionController } from './version.controller';
+import { VersionService } from './version.service';
 
 describe('when calling version controller', () => {
   let controller: VersionController;
@@ -7,6 +8,7 @@ describe('when calling version controller', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [VersionController],
+      providers: [VersionService]
     }).compile();
 
     controller = module.get<VersionController>(VersionController);
