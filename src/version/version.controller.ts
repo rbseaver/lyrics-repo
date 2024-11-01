@@ -3,9 +3,7 @@ import { VersionService } from './version.service';
 
 @Controller('version')
 export class VersionController {
-  constructor(private readonly versionService: VersionService) {
-    
-  }
+  constructor(private readonly versionService: VersionService) {}
 
   @Get()
   async getVersion(): Promise<string> {
