@@ -1,3 +1,8 @@
 {
-	"jest.autoRevealOutput": "on-exec-error"
+	"testing.openTesting": "neverOpen",
+	"jest.outputConfig": {
+		"clearOnRun": "none",
+		"revealOn": "error",
+		"revealWithFocus": "none"
+	}
 }
