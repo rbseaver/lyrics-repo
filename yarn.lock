@@ -912,7 +912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/cli@npm:^10.0.1":
+"@nestjs/cli@npm:^10.4.5":
   version: 10.4.5
   resolution: "@nestjs/cli@npm:10.4.5"
   dependencies:
@@ -6028,7 +6028,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "lyrics-repo@workspace:."
   dependencies:
-    "@nestjs/cli": "npm:^10.0.1"
+    "@nestjs/cli": "npm:^10.4.5"
     "@nestjs/common": "npm:^10.0.0"
     "@nestjs/core": "npm:^10.0.0"
     "@nestjs/platform-express": "npm:^10.0.0"
