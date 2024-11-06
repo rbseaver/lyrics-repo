@@ -6057,6 +6057,13 @@ __metadata:
     ts-node: "npm:^10.9.1"
     tsconfig-paths: "npm:^4.2.0"
     typescript: "npm:^5.1.3"
+  dependenciesMeta:
+    "@nestjs/testing@10.4.6":
+      unplugged: true
+    "@types/jest@29.5.14":
+      unplugged: true
+    jest@29.7.0:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
