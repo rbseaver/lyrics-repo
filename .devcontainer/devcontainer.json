@@ -23,5 +23,28 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"dbaeumer.vscode-eslint",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"VisualStudioExptTeam.vscodeintellicode-completions",
+				"k--kato.intellij-idea-keybindings",
+				"Orta.vscode-jest",
+				"dotup.dotup-vscode-interface-generator",
+				"andys8.jest-snippets",
+				"stringham.move-ts",
+				"leizongmin.node-module-intellisense",
+				"rvest.vs-code-prettier-eslint",
+				"ms-vscode.remote-explorer",
+				"hbenl.vscode-test-explorer",
+				"pmneo.tsimporter",
+				"heaths.vscode-guid",
+				"zpeterg.intellij-idea-keybindings-mac-to-pc"
+			]
+		}
+	}
 }
