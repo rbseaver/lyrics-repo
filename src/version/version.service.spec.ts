@@ -27,7 +27,7 @@ describe('VersionService', () => {
     jest.clearAllMocks();
   });
 
-  test('it should parse the version from file', async () => {
+  test('it should parse the version from file', () => {
     const version: string = service.getVersion();
 
     expect(version).toBe('0.0.1');

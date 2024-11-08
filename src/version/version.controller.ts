@@ -6,7 +6,7 @@ export class VersionController {
   constructor(private readonly versionService: VersionService) {}
 
   @Get()
-  async getVersion(): Promise<string> {
-    return await this.versionService.getVersion();
+  getVersion(): string {
+    return this.versionService.getVersion();
   }
 }
