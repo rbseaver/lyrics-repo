@@ -30,8 +30,10 @@ describe('when calling version controller', () => {
   });
 
   test('it should return the full version as a string', () => {
-    const version: string = controller.getVersion();
+    const metaInfo = controller.getMetaInfo();
 
-    expect(version).toBe('1.0.0');
+    expect(metaInfo).toEqual({
+      version: '1.0.0'
+    });
   });
 });

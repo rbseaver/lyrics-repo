@@ -6,7 +6,11 @@ export class VersionController {
   constructor(private readonly versionService: VersionService) {}
 
   @Get()
-  getVersion(): string {
-    return this.versionService.getVersion();
+  getMetaInfo(): { [key: string]: string } {
+    const version = this.versionService.getVersion();
+
+    return {
+      version
+    };
   }
 }
