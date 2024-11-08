@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
+import { readFileSync } from 'fs';
 
 @Injectable()
 export class VersionService {
-  getVersion(): Promise<string> {
-    return Promise.resolve('1.0.0');
+  getVersion(): string {
+    const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
+    return packageJson.version;
   }
 }
